@@ -1,0 +1,7 @@
+.header__logo-div, .header__link-list, .header__btn-div {
+    display: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
