@@ -4,38 +4,36 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width"
-      ="device-width,"
-      initial-scale="1.0"
+      content="width=device-width, initial-scale=1.0"
     />
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="src/css/main.css" />
   </head>
   <body>
     <header class="header">
-      <div class="header-div contaner">
+      <div class="header-div container">
         <div class="header__logo-div">
-          <img src="img/logo.png" alt="logo" />
+          <img src="src/img/logo.png" alt="logo" />
           <span class="logo-span">tian</span>
         </div>
+        <div class="header-menu-div">
         <ul class="header__link-list">
-          <li class="link"><a href="#">Home</a></li>
-          <li class="link"><a href="#">About us</a></li>
-          <li class="link"><a href="#">Couses</a></li>
-          <li class="link"><a href="#">FAQ</a></li>
+          <li class=""><a class="header-link" href="#">Home</a></li>
+          <li class=""><a class="header-link" href="#">About us</a></li>
+          <li class=""><a class="header-link" href="#">Couses</a></li>
+          <li class=""><a class="header-link" href="#">FAQ</a></li>
         </ul>
-        <div class="header__btn-div">
-          <button class="header__help-btn">Contact Us btn-type-1</button>
+          <button class="header__help-btn btn">Contact Us</button>
           <button class="header__theme-btn">
-            <img src="img/sun.png" alt="" />
+            <img src="src/img/sun.png" alt="" />
           </button>
+        <img class="header-mobile-menu" src="src/img/textalign-right.png" />
         </div>
-        <img src="img/textalign-right.png" />
       </div>
     </header>
     <main>
       <section class="hero">
-        <div class="hero__div contaner">
+        <div class="hero__div container">
           <div class="hero__text-div">
             <h1 class="hero__title">
               Where the joy of learn meets the power of community
@@ -52,63 +50,78 @@
             </div>
           </div>
         </div>
+        
       </section>
       <section class="hero-cards">
         <div class="hero-cards-div container">
-          <ul class="cards-line">
-            <li class="card">
-              <img src="" alt="" />
-              <h2 class="">Explore topics</h2>
-              <p class="">Explore our selection of courses in development</p>
-            </li>
-            <li class="card">
-              <img src="" alt="" />
-              <h2>Meet new friends</h2>
-              <p>Join the network with million of students and learn</p>
-            </li>
-            <li class="card">
-              <img src="" alt="" />
-              <h2>Learn code</h2>
-              <p>Learn all about code and become in a developer</p>
-            </li>
-          </ul>
+          <ul class="hero-cards-line">
+          <li class="hero-card">
+            <img class="hero-card__svg" src="./src/img/clipboard.png" alt="shop-icon" />
+            <div class="hero-card__text-div">
+              <h2 class="hero-card-title">Explore topics</h2>
+              <p class="hero-card-text">
+                Explore our selection of courses in development
+              </p>
+            </div>
+          </li>
+          <li class="hero-card">
+            <img class="hero-card__svg" src="./src/img/people.png" alt="people-icon" />
+            <div class="hero-card__text-div">
+              <h2 class="hero-card-title">Meet new friends</h2>
+              <p class="hero-card-text">
+                Join the network with million of students and learn
+              </p>
+            </div>
+          </li>
+          <li class="hero-card">
+            <img class="hero-card__svg" src="./src/img/people.png" alt="people-icon" />
+            <div class="hero-card__text-div">
+              <h2 class="hero-card-title">Learn code</h2>
+              <p class="hero-card-text">
+                Learn all about code and become in a developer
+              </p>
+            </div>
+          </li>
+        </ul>
         </div>
       </section>
       <section class="cards">
-        <h3 class=""></h3>
-        <div class="">
-          <div class="">
-            <img src="" alt="" /><span class="">Development</span>
-            <h3 class="">Frontend Development with JavaScript</h3>
-            <span class="">By Cristian Muñoz</span>
-            <p class="">Duration:7 weeks</p>
-            <span>$80.00 USD 80% discount</span>
-            <button class="">Buy now $14.00 USD</button>
+        <div class="cards-div container">
+        <h3 class="cards-title">Popular courses</h3>
+        <div class="cards-list">
+          <div class="card">
+            <img class="card-img" src="src/img/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="" /><span class="cards-topic">Development</span>
+            <h3 class="card-title">Frontend Development with JavaScript</h3>
+            <span class="card-author">By Cristian Muñoz</span>
+            <p class="card-duration">Duration:7 weeks</p>
+            <span class="card-price">$80.00 USD 80% discount</span>
+            <button class="card-btn btn">Buy now $14.00 USD</button>
           </div>
-          <div class="">
-            <img src="" alt="" /><span class="">Development</span>
-            <h3 class="">Frontend Development with JavaScript</h3>
-            <span class="">By Cristian Muñoz</span>
-            <p class="">Duration:7 weeks</p>
-            <span>$80.00 USD 80% discount</span>
-            <button class="">Buy now $14.00 USD</button>
+          <div class="card">
+            <img class="card-img" src="src/img/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="" /><span class="cards-topic">Development</span>
+            <h3 class="card-title">Frontend Development with JavaScript</h3>
+            <span class="card-author">By Cristian Muñoz</span>
+            <p class="card-duration">Duration:7 weeks</p>
+            <span class="card-price">$80.00 USD 80% discount</span>
+            <button class="card-btn btn">Buy now $14.00 USD</button>
           </div>
-          <div class="">
-            <img src="" alt="" /><span class="">Development</span>
-            <h3 class="">Frontend Development with JavaScript</h3>
-            <span class="">By Cristian Muñoz</span>
-            <p class="">Duration:7 weeks</p>
-            <span>$80.00 USD 80% discount</span>
-            <button class="">Buy now $14.00 USD</button>
+          <div class="card">
+            <img class="card-img" src="src/img/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="" /><span class="cards-topic">Development</span>
+            <h3 class="card-title">Frontend Development with JavaScript</h3>
+            <span class="card-author">By Cristian Muñoz</span>
+            <p class="card-duration">Duration:7 weeks</p>
+            <span class="card-price">$80.00 USD 80% discount</span>
+            <button class="card-btn btn">Buy now $14.00 USD</button>
           </div>
-          <div class="">
-            <img src="" alt="" /><span class="">Development</span>
-            <h3 class="">Frontend Development with JavaScript</h3>
-            <span class="">By Cristian Muñoz</span>
-            <p class="">Duration:7 weeks</p>
-            <span>$80.00 USD 80% discount</span>
-            <button class="">Buy now $14.00 USD</button>
+          <div class="card">
+            <img class="card-img" src="src/img/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="" /><span class="cards-topic">Development</span>
+            <h3 class="card-title">Frontend Development with JavaScript</h3>
+            <span class="card-author">By Cristian Muñoz</span>
+            <p class="card-duration">Duration:7 weeks</p>
+            <span class="card-price">$80.00 USD 80% discount</span>
+            <button class="card-btn btn">Buy now $14.00 USD</button>
           </div>
+        </div>
         </div>
       </section>
       <section class="about">
@@ -167,39 +180,48 @@
           </div>
         </div>
       </section>
-      <footer class="footer">
-        <div class="footer-div container">
-          <div class="footer__icons-div">
-            <div class="header__logo-div">
-              <img src="img/logo.png" alt="logo" />
-              <span class="logo-span">tian</span>
+      <footer class=“footer”>
+        <div class=“footer-div container”>
+          <div class=“footer__icons-div”>
+            <div class=“header__logo-div”>
+              <img src=“./img/Group 1-2.png” alt=“logo” />
+              <span class=“logo-span”>tian</span>
             </div>
-            <ul class="icons__list">
-              <li class="footer__icon"><img src="./img/instagram.png" alt="" /></li>
-              <li class="footer__icon"><img src="./img/Figma.png" alt="" /></li>
-              <li class="footer__icon"><img src="./img/linkedin.png" alt="" /></li>
-              <li class="footer__icon"><img src="./img/twitter.png" alt="" /></li>
-              <li class="footer__icon"><img src="./img/telegram.png" alt="" /></li>
-              <li class="footer__icon"><img src="./img/Medium Logo.png" alt="" /></li>
+            <ul class=“icons__list”>
+              <li class=“footer__icon”>
+                <img class=“icon” src=“./img/instagram.png” alt=“” />
+              </li>
+              <li class=“footer__icon”><img src=“./img/Figma.png” alt=“” /></li>
+              <li class=“footer__icon”>
+                <img src=“./img/linkedin.png” alt=“” />
+              </li>
+              <li class=“footer__icon”>
+                <img src=“./img/twitter.png” alt=“” />
+              </li>
+              <li class=“footer__icon”>
+                <img src=“./img/telegram.png” alt=“” />
+              </li>
+              <li class=“footer__icon”>
+                <img src=“./img/Medium Logo.png” alt=“” />
+              </li>
             </ul>
           </div>
-          <div class="footer__links-div">
-            <div class="footer__coloun">
-              <span class="footer__coloun-title">Products</span>
-              <a class="footer__link" href="#">Courses</a>
-              <a class="footer__link" href="">Development</a>
+          <div class=“footer__links-div”>
+            <div class=“footer__coloun”>
+              <span class=“footer__coloun-title”>Products</span>
+              <a class=“footer__link” href=“#”>Courses</a>
+              <a class=“footer__link” href=“”>Development</a>
             </div>
-             <div class="footer__coloun">
-              <span class="footer__coloun-title">Resources</span>
-              <a class="footer__link" href="#">Careers</a>
-              <a class="footer__link" href="#">Blog</a>
+            <div class=“footer__coloun”>
+              <span class=“footer__coloun-title”>Resources</span>
+              <a class=“footer__link” href=“#”>Careers</a>
+              <a class=“footer__link” href=“#”>Blog</a>
             </div>
-             <div class="footer__coloun">
-              <span class="footer__coloun-title">Company</span>
-              <a class="footer__link" href="#">QA</a>
-              <a class="footer__link" href="#">Terms and conditions</a>
-               <a class="footer__link" href="#">Privacy policy</a>
-            </div>
+            <div class=“footer__coloun”>
+              <span class=“footer__coloun-title”>Company</span>
+              <a class=“footer__link” href=“#”>QA</a>
+              <a class=“footer__link” href=“#”>Terms and conditions</a>
+              <a class=“footer__link” href=“#”>Privacy policy</a>
             </div>
           </div>
         </div>

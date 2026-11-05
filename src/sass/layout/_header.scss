@@ -1,5 +1,47 @@
-
-.header {
+.header__link-list, .header__btn-div, .header__help-btn, .header__theme-btn {
+    display: none;
+    @media screen and (min-width: 1024px) {
+        display: block;
+    }
+}
+.header-div {
     display: flex;
     justify-content: space-between;
+}
+.header-menu-div {
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+}
+.header-mobile-menu {
+    @media screen and (min-width: 1024px) {
+        display: none;
+    }
+}
+.header__link-list {
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        gap: 30px;
+    }
+}
+.header-link {
+    padding: 10px;
+    font-size: 20px;
+}
+.header__help-btn {
+    padding: 14px 24px;
+}
+
+.header__theme-btn {
+    padding: 11px;
+    background-color: transparent;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+}
+header {
+    padding: 40px 0;
+    position: absolute;
+    width: 100vw;
 }
