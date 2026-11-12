@@ -1,0 +1,40 @@
+.about {
+  padding-block: 153px;
+  background-image: url(../img/about-bg.jpg);
+  background-size: cover;
+  @include tablet {
+    padding-block: 223px;
+  }
+
+  @include desktop {
+    padding-block: 165px;
+  }
+
+
+&__div {
+  text-align: center;
+  
+}
+&__name {
+   color: white;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  margin-bottom: 32px;
+  @include tablet {
+    font-size: 48px;
+    line-height: 100%;
+  }
+}
+&__text {
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  @include tablet {
+    font-size: 38px;
+    line-height: 100%;
+  }
+}
+
+}

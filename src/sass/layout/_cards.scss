@@ -1,3 +1,9 @@
+.cards {
+    padding-bottom: 48px;
+    @media screen and (min-width: 1730px) {
+        padding-bottom: 128px;
+    }
+}
 .cards-title {
     font-size: 38px;
     margin-bottom: 40px;

@@ -1,0 +1,59 @@
+.faq {
+
+
+
+&__cards {
+  display: grid;
+  gap: 150px;
+}
+&__card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @include desktop {
+    flex-direction: row;
+    
+  }
+  
+}
+&__img-div {
+  margin-bottom: 12px;
+  @include tablet {
+    margin-bottom: 40px;
+  }
+}
+&__text-div {
+  text-align: center;
+  @include desktop {
+      max-width: 671px;
+      text-align: left;
+      margin-inline: auto;
+  }
+  
+}
+
+&__title {
+  font-weight: 600;
+font-size: 30px;
+    line-height: 38px;
+  margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 48px;
+  }
+  
+  
+}
+&__about {
+font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+  color: #a3a3a3;
+
+  @include tablet {
+    font-weight: 400;
+        font-size: 30px;
+        line-height: 130%;
+  }
+}
+}
