@@ -57,11 +57,17 @@ body {
   border: none;
 }
 
-.header__link-list, .header__btn-div, .header__help-btn, .header__theme-btn {
+.header__link-list,
+.header__btn-div,
+.header__help-btn,
+.header__theme-btn {
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  .header__link-list, .header__btn-div, .header__help-btn, .header__theme-btn {
+  .header__link-list,
+  .header__btn-div,
+  .header__help-btn,
+  .header__theme-btn {
     display: block;
   }
 }
@@ -136,7 +142,7 @@ header {
   width: 100px;
   height: 3px;
   border-radius: 9999px;
-  background-color: #8B5CF6;
+  background-color: #8b5cf6;
   -webkit-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
           transform: translateX(-100%);
