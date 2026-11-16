@@ -4,24 +4,47 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin: 0 auto;
+    overflow-x: hidden; 
+      position: relative;
+    
   
 }
 
-.hero__title, .hero__primary {
-    text-align: center;
-    margin-bottom: 30px;
+ 
+.hero__title {
+  margin-bottom: 30px;
     color: $main-color;
     font-size: 38px;
+    text-align: center;
+    font-weight: 700;
+    @include tablet {
+        font-size: 80px;
+        font-weight: 700;
+       
+      }
+            
 }
 .hero__primary {
+  text-align: center;
+  margin-bottom: 30px;
     color: $secondary-color;
-    font-size: 20px;
+      font-size: 24px;
+        font-weight: 300;
+        line-height: 130%;
+        @include tablet {
+            font-size: 24px;
+            line-height: 1.4;
+            
+          }
 }
 .hero__btn {
     margin: 0 auto;
     padding: 20px 32px;
     margin-bottom: 10px;
     display: block;
+    font-size: 16px;
+    font-weight: 600;
 }
 .hero__video-btn {
     padding: 20px 32px;
@@ -32,11 +55,15 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    font-size: 16px;
+      font-weight: 600;
 }
 .hero__text-div {
+  margin: 0 auto;
   padding: 95px 0px;
-  @mixin tablet {
+  @include tablet {
     padding: 140px 0px;
+    max-width: 787px;
   }
 }
 .hero-cards {
@@ -107,6 +134,5 @@
   .hero-card__svg {
     width: 28px;
     height: 28px;
-    margin-top: 35px;
   }
 }
