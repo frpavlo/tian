@@ -10,27 +10,55 @@
     <link rel="stylesheet" href="src/css/main.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header-div container">
-        <div class="header__logo-div">
-          <img src="src/img/logo.png" alt="logo" />
-          <span class="logo-span">tian</span>
-        </div>
-        <div class="header-menu-div">
-        <ul class="header__link-list">
-          <li class=""><a class="header-link" href="#">Home</a></li>
-          <li class=""><a class="header-link" href="#">About us</a></li>
-          <li class=""><a class="header-link" href="#">Couses</a></li>
-          <li class=""><a class="header-link" href="#">FAQ</a></li>
-        </ul>
-          <button class="header__help-btn btn">Contact Us</button>
-          <button class="header__theme-btn">
-            <img src="src/img/sun.png" alt="" />
-          </button>
-        <img class="header-mobile-menu" src="src/img/textalign-right.png" />
-        </div>
+   <header class="header">
+  <input type="checkbox" id="burger-toggle" class="burger-checkbox" />
+
+  <div class="header-div container">
+    <div class="header__logo-div">
+      <img src="src/img/logo.png" alt="logo" />
+      <span class="logo-span">tian</span>
+    </div>
+
+    <div class="header-menu-div">
+      <ul class="header__link-list">
+        <li><a class="header-link" href="#">Home</a></li>
+        <li><a class="header-link" href="#">About us</a></li>
+        <li><a class="header-link" href="#">Courses</a></li>
+        <li><a class="header-link" href="#">FAQ</a></li>
+      </ul>
+      <button class="header__help-btn btn">Contact Us</button>
+      <button class="header__theme-btn">
+        <img src="src/img/sun.png" alt="theme" />
+      </button>
+
+      
+      <label for="burger-toggle" class="header-mobile-menu">
+        <img class="icon-open" src="src/img/textalign-right.png" alt="open menu" />
+        <span class="icon-close">&times;</span>
+      </label>
+    </div>
+  </div>
+
+  
+  <div class="mobile-menu">
+    <div class="container mobile-menu__inner">
+      <ul class="mobile-menu__list">
+        <li><a class="mobile-menu__link" href="#">Home</a></li>
+        <li><a class="mobile-menu__link" href="#">About us</a></li>
+        <li><a class="mobile-menu__link" href="#">Courses</a></li>
+        <li><a class="mobile-menu__link" href="#">FAQ</a></li>
+      </ul>
+
+      <div class="mobile-menu__actions">
+        <button class="btn">Contact Us</button>
+        <button class="header__theme-btn mobile-menu__theme">
+          <img src="src/img/sun.png" alt="theme" />
+        </button>
       </div>
-    </header>
+    </div>
+  </div>
+</header>
+
     <main>
       <section class="hero">
         <div class="hero__div container">
